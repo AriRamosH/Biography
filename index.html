@@ -1,12 +1,110 @@
 <!DOCTYPE html>
-<html>    
-    <head>
-        <title>
-            Me
-        </title>
-    </head>
-    <body>
-        <p>Testing</p>
-    </body>
-</html>
+<html>
+<head>
+    <title>Ari Ramos</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.img2 {
+    position:absolute;
+    top: 25px;
+    left: 35px;
+    z-index: 2;
+    }
+.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.menu a {
+  background-color:#43C7C0;
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:100%;
+  color:#F1F1F1;
+}
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+}
+.right {
+  background-color:#43C7C0;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+  color:#F1F1F1;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:#F1F1F1;
+}
 
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Courier;color:#aaaaaa;">
+
+    <div class="container">
+        <img src="IMG/img_bg.png" alt="BG" width="1300" height="200" class="container">
+        <div class="centered"><h1>Welcome!</h1></div>
+        <img src="IMG/img2.png" alt="Profile" width="160" height="160" class="img2">
+    </div>  
+
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="#">Photography</a>
+    <a href="#">Illustrations</a>
+  </div>
+
+  <div class="main">
+    <h2>Introduction</h2>
+    <p>Oh, Hi, there!<br/>
+      My name is <b>Arantxa Ramos</b>, I'm a Mexican illustrator currently residing in Kyoto, Japan. As for the moment I am cursing a masters degree in IT Anime and Manga at <i>Kyoto Computer Gakuin</i> (KCGI) and hopefully will be graduating on March 2022.<br/>
+      Thank you for visiting my page and if you have any questions please feel free to enter them below.
+    </p>
+      <hr>
+      <br/>
+      <form>
+          <fieldset>
+              <legend><b>Contact Form</b></legend>
+              <p>Please select the subject of your inquiry:<br/>
+                  <input type="radio" name="inquiry" value="commissions" checked="checked"/> Commisions
+                  <input type="radio" name="inquiry" value="workflow" checked="checked"/> Workflow
+                  <input type="radio" name="inquiry" value="general-curiosity" checked="checked"/> General Curiosity
+              </p>
+              <p>
+                  <b>What is your inquiry?</b><br/>
+                  <textarea name="comments" cols="20" rows="4"> Please remember to write your name... </textarea>
+              </p>
+              
+              <input type="submit" value="Register">
+              <input type="reset">
+              
+          </fieldset>
+      </form>
+  </div>
+</div>
+
+<div style="background-color:#43C7C0;text-align:center;padding:10px;margin-top:7px;color:#F1F1F1;">© copyright ariramos</div>
+
+</body>
+</html>
